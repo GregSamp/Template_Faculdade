@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="EGrappler.com, Sarfraz Shoukat, Muhammad Shahbaz Saleem">
+    <title>Colegio_Template</title>
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--Folhas de estilo fontes dos icones redes sociais-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- jQuery plugins -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- Modernizr é uma pequena biblioteca Javascript que detecta a disponibilidade das novas características do HTML5 e CSS3 nos browsers.Ex: Animações em geral  -->
+    <script src="js/modernizr.custom.js"></script>
+    <!-- Estilos do slider -->
+    <link rel="stylesheet" href="css/animate.min.css"> 
+    <!--Estilos carrossel-->
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <!-- Função script para quando estiver descendo na página somente o cabeçalho fique fixo e não o topo com os contatos-->
+    <script>
+		$(function(){   
+			var nav = $('#menuHeader');   
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 20) { 
+					nav.addClass("menu-fixo"); 
+				} else { 
+					nav.removeClass("menu-fixo"); 
+				} 
+			});  
+		});
+	</script>
+  
+  </head>
+  
+<body id="home">
+  <!-- Adicionar id ao topo para que função de scrool funcione, ancorando com o primeiro li (home)-->
+  <div class="topo">
+    <div class="container">
+		<div class="endereco_phone">
+		  <p>Telefone: 333333333</p> 
+		</div>
+		<div class="redes_1">  
+		 <a href=""><i class="fa fa-facebook"></i></a>
+		 <a href=""><i class="fa fa-instagram"></i></a>
+		 <a href=""><i class="fa fa-youtube"></i></a>
+		</div> 
+    </div>
+  </div>
+  <header id="menuHeader" class="header"> 
+    <div class="container">
+	  <div class="row">
+	    <div class="col-md-3">
+		  <div class="logo">
+		    <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+		  </div>
+		</div>
+		
+		<div>
+             <nav class="menu">
+                <div id="dl-menu" class="dl-menuwrapper">
+                  <button class="dl-trigger">Open Menu</button>
+                    <ul class="dl-menu">
+                      <!-- A classe scroll serve para que o background do menu percorra automaticamente assim que o úsuario navegar pelas sessões, acrescentar o mesmo id do body, para que não haja problema na função -->
+                      <li class="scroll active"><a href="#home">Home</a></li>
+                      <li class="scroll"><a href="#sobre">Sobre</a></li>
+                      <li class="scroll"><a href="#professores">Professores</a></li>
+                      <li class="scroll"><a href="#destaques">Destaques</a></li>
+                      <li class="scroll"><a href="#contatos">Contatos</a></li>
+                      <li><a href="galeria.html">Galeria</a></li>
+                      <li><a href="#">Cursos</a>
+						  <ul class="dl-submenu">
+						     <li><a href="portfolio2.html">Curso 1 </a></li>
+							 <li><a href="portfolio3.html">Curso 2</a></li>
+							 <li><a href="portfolio4.html">Curso 3</a></li>
+						  </ul>
+					   </li>
+                    </ul>
+                 </div> 
+             </nav><!-- /.menu --> 
+		</div>
+		
+	  </div>
+
+	</div>
+  </header>	
+  <!--  section slider-->
+  <section class="banner">
+  <!-- banner text --> 
+	<div class="slider-banner">
+            <div data-lazy-background="img/slides/1.jpg"> 
+                <h3 data-pos="['70%', '110%', '70%', '35%']" data-duration="700" data-effect="move">
+                    CURSOS PRESENCIAIS
+                </h3> 
+            </div>
+            <div data-lazy-background="img/slides/2.jpg">
+               
+                <h3 data-pos="['70%', '110%', '70%', '35%']" data-duration="700" data-effect="move">
+                    ATIVIDADES INTEGRADAS
+                </h3> 
+            </div>
+			<div data-lazy-background="img/slides/3.jpg">
+			   
+				<h3 data-pos="['70%', '110%', '70%', '35%']" data-duration="700" data-effect="move">
+					CAMPUS CONCEITO  
+				</h3> 
+			</div>
+        </div>
+      <!-- banner text --> 
+  </section>
+   <!--Sessão sobre-->   
+  <section id="sobre" class="apresentacao">
+  <div class="container">
+    <div class="row_2">
+      <h1>SOBRE NOSSA INSTITUIÇÃO</h1> 
+      <!-- item -->
+      <div class="text-center"> 
+	  <div class="box-item">
+	  <img src="img/apresentacao/1.jpg" alt="" />
+        <h3>Cursos</h3>
+        <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer elit imperdiet congue.</p>
+      </div>
+	   </div>
+      <!-- end: --> 
+      <!-- item -->
+      <div class="text-center">
+	  <div class="box-item">
+	  <img src="img/apresentacao/2.jpg" alt="" />
+        <h3>Conhecimento</h3>
+        <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer elit imperdiet congue.</p>
+      </div>
+	   </div>
+      <!-- end: --> 
+      <!-- item -->
+      <div class="text-center">
+	  <div class="box-item">
+	  <img src="img/apresentacao/3.jpg" alt="" />
+        <h3>Eventos</h3>
+        <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed elit impe.</p>
+      </div>
+	   </div>
+      <!-- end: --> 
+      <!-- item -->
+      <div class="text-center">
+	  <div class="box-item">
+	  <img src="img/apresentacao/4.jpg" alt="" />
+        <h3>Ultimas notícias</h3>
+        <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer elit imperdiet conempus.</p>
+      </div>
+      <!-- end:-->
+	   </div>
+    </div>
+  </div>
+ </section>
+  <!--Sessão de professores-->    
+ <section id="professores" class="apresentacao">
+  <div class="container">
+    <div class="row_2">
+      <h1>NOSSOS PROFESSORES</h1> 
+      <!-- item -->
+      <div class="text-center"> 
+	  <div class="box-item">
+	  <img src="img/professores/1.jpg" alt=""/>
+        <h3>Rogério Castro</h3>
+        <p>Matemática <br><br><a class="botao_texto" >Saiba +</a></p>
+        <div class="texto_area nav_aberta">
+        <div class="wrap"> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nisi, ipsam tempora error totam quos, quas possimus. Optio quos excepturi quibusdam doloribus repudiandae error sunt? Delectus unde est nemo. Cumque.</p>
+        </div>
+        </div>
+        <div class="redes_2">  
+		 <a href=""><i class="fa fa-facebook"></i></a>
+		 <a href=""><i class="fa fa-instagram"></i></a>
+		 <a href=""><i class="fa fa-youtube"></i></a>
+		</div> 
+      </div>
+	   </div>
+      <!-- end: --> 
+      
+      <!-- item -->
+      <div class="text-center">
+	  <div class="box-item">
+	  <img src="img/professores/2.jpg" alt="" />
+        <h3>Mariano Silva</h3>
+        <p>Português<br><br><a class="botao_texto_2">Saiba +</a></p>
+        <div class="texto_area_2 nav_aberta_2">
+        <div class="wrap_2"> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nisi, ipsam tempora error totam quos, quas possimus. Optio quos excepturi quibusdam doloribus repudiandae error sunt? Delectus unde est nemo. Cumque.</p>
+        </div>
+        </div>
+        <div class="redes_2">  
+		 <a href=""><i class="fa fa-facebook"></i></a>
+		 <a href=""><i class="fa fa-instagram"></i></a>
+		 <a href=""><i class="fa fa-youtube"></i></a>
+		</div> 
+      </div>
+	   </div>
+      <!-- end: --> 
+      
+      <!-- item -->
+      <div class="text-center">
+	  <div class="box-item">
+	  <img src="img/professores/3.jpg" alt="" />
+        <h3>Leticia Caetano</h3>
+        <p>Historia<br><br><a class="botao_texto_3">Saiba +</a></p>
+        <div class="texto_area_3 nav_aberta_3">
+        <div class="wrap_3"> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nisi, ipsam tempora error totam quos, quas possimus. Optio quos excepturi quibusdam doloribus repudiandae error sunt? Delectus unde est nemo. Cumque.</p>
+        </div>
+        </div>
+        <div class="redes_2">  
+		 <a href=""><i class="fa fa-facebook"></i></a>
+		 <a href=""><i class="fa fa-instagram"></i></a>
+		 <a href=""><i class="fa fa-youtube"></i></a>
+		</div> 
+      </div>
+	   </div>
+      <!-- end: --> 
+      
+      <!-- item -->
+      <div class="text-center">
+	  <div class="box-item">
+	  <img src="img/professores/4.jpg" alt=""/>
+        <h3>Sandra Melo</h3>
+        <p>Quimica <br><br><a class="botao_texto_4">Saiba +</a></p>
+        <div class="texto_area_4 nav_aberta_4">
+        <div class="wrap_4"> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nisi, ipsam tempora error totam quos, quas possimus. Optio quos excepturi quibusdam doloribus repudiandae error sunt? Delectus unde est nemo. Cumque.</p>
+        </div>
+        </div>
+        <div class="redes_2">  
+		 <a href=""><i class="fa fa-facebook"></i></a>
+		 <a href=""><i class="fa fa-instagram"></i></a>
+		 <a href=""><i class="fa fa-youtube"></i></a>
+		</div> 
+      </div>
+      <!-- end:-->
+	   </div>
+    </div>
+  </div>
+  <!--/.container--> 
+</section>
+<!--Sessão de destaques-->   
+<section id="destaques" class="apresentacao">
+  <div class="container">
+    <h1>DESTAQUES</h1>
+    <div id="owl-demo" class="row_2 owl-carousel">
+      <!-- item -->
+      <div class="text-center"> 
+	  <div class="item box-item_dest">
+	  <div class="foto_legenda"><figcaption id="texto_foto_carrossel"><a href="galeria.html">Galeria</a></figcaption><img src="img/destaques/1.jpg" alt=""/></div>
+        <h3>Grupos de estudo</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem, nemo voluptatum magni</p>
+      </div>
+	  </div>
+      <!-- end: --> 
+      
+      <!-- item -->
+      <div class="text-center"> 
+	  <div class="item box-item_dest">
+	  <div class="foto_legenda"><figcaption id="texto_foto_carrossel"><a href="galeria.html">Galeria</a></figcaption><img src="img/destaques/2.JPG" alt="" /></div>
+        <h3>Esportes</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem, nemo voluptatum magni</p>
+      </div>
+	  </div>
+      <!-- end: --> 
+      
+      <!-- item -->
+      <div class="text-center"> 
+	  <div class="item box-item_dest">
+	 <div class="foto_legenda"><figcaption id="texto_foto_carrossel"><a href="galeria.html">Galeria</a></figcaption><img src="img/destaques/3.jpg" alt="" /></div>
+        <h3>Olimpíadas de estudo</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem, nemo voluptatum magni</p>
+      </div>
+	  </div>
+      <!-- end: --> 
+      
+      <!-- item -->
+      <div class="text-center"> 
+	  <div class="item box-item_dest">
+	  <div class="foto_legenda"><figcaption id="texto_foto_carrossel"><a href="galeria.html">Galeria</a></figcaption><img src="img/destaques/4.jpg" alt="" /></div>
+        <h3>Palestras diversas</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem, nemo voluptatum magni</p>
+      </div>
+	  </div>
+	  <!--end-->
+	  
+	   <!-- item -->
+      <div class="text-center"> 
+	  <div class="item box-item_dest">
+	  <div class="foto_legenda"><figcaption id="texto_foto_carrossel"><a href="galeria.html">Galeria</a></figcaption><img src="img/destaques/5.jpg" alt="" /></div>
+        <h3>Parquinho infantil</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem, nemo voluptatum magni</p>
+      </div>
+	  </div>
+	  <!--end--> 
+	  
+	   <!-- item -->
+      <div class="text-center"> 
+	  <div class="item box-item_dest">
+	  <div class="foto_legenda"><figcaption id="texto_foto_carrossel"><a href="galeria.html">Galeria</a></figcaption><img src="img/destaques/6.jpg" alt="" /></div>
+        <h3>Quadra poliesportiva</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem, nemo voluptatum magni</p>
+      </div>
+	  </div>
+	  <!--end--> 
+	  
+	   <!-- item -->
+      <div class="text-center"> 
+	  <div class="item box-item_dest">
+	   <div class="foto_legenda"><figcaption id="texto_foto_carrossel"><a href="galeria.html">Galeria</a></figcaption><img src="img/destaques/7.jpg" alt="" /></div>
+        <h3>Parquinho infantil</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem, nemo voluptatum magni</p>
+      </div>
+	  </div>
+	  <!--end--> 
+	  
+	   <!-- item -->
+      <div class="text-center"> 
+	  <div class="item box-item_dest">
+	  <div class="foto_legenda"><figcaption id="texto_foto_carrossel"><a href="galeria.html">Galeria</a></figcaption><img src="img/destaques/8.jpg" alt="" /></div>
+        <h3>Semana Cultural</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem, nemo voluptatum magni</p>
+      </div>
+	  </div>
+	  <!--end-->  
+    </div>
+  </div>
+  <!--/.container--> 
+</section>   
+    <!--Script Carrossel de destaques--> 
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+          $("#owl-demo").owlCarousel({
+            autoPlay: 3000,
+            stopOnHover : true,
+            navigation : true,
+		    navigationText : ["&#60;","&#62"],  
+            items : 4,
+            itemsDesktop : [1199,4],
+            itemsDesktopSmall : [979,3]
+          });
+
+        });
+    </script>  
+    <!--fim do script Carrossel-->
+    
+<section  id="contatos" class="fechamento">    
+     <div class="rodape">
+		<div class="container">
+		     <!----Formulário---->
+			 <h1>ENTRE EM CONTATO</h1>				
+			 <div id="Formulario">
+				<form action="enviar_2.php" method="post">
+					<input class="input_form" type="text" name="nome" placeholder="Nome" required>
+					<input class="input_form" type="text" name="email" placeholder="Email" required>
+					<input class="input_form" type="text" name="fone" placeholder="Telefone" required>
+					<textarea id="assunto" name="mensagem" placeholder="Informações, dúvidas ou sugestões" required ></textarea>
+					<input type="submit"	value="Enviar" id="botao">	   
+			    </form>	
+             </div>           
+            <!----links redes---->
+             <div class="links_frame">
+				<div class="redes_3">  
+				 <a href=""><i class="fa fa-facebook"></i></a>
+				 <a href=""><i class="fa fa-instagram"></i></a>
+				 <a href=""><i class="fa fa-youtube"></i></a>
+				</div> 
+				<div class="onde">
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.410344376896!2d-38.6006319856986!3d-3.7203439972932046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74a451d5437c1%3A0xe12e59f824f68e08!2sR.+Trinta+e+Um+(Conjunto+Polar%2C+1721+-+Vila+Velha%2C+Fortaleza+-+CE!5e0!3m2!1spt-PT!2sbr!4v1501462224142" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>	
+			<!----Telefone e sobre--->
+			<div class="text-center fones">
+				    <p class="">Telefone: 33333333</p>
+				    <p class="rodape_sobre">Colégio Saber pra vida - Do maternal ao ensino médio, com uma perfeita estrutura de ensino, para que seu filho esteja sempre aprendendo. Aqui nós ensinamos pra além da sala de aula, aqui nós ensinamos para a vida</p>
+			</div>				
+		</div>
+ 	</div>  
+ </section> 
+    <!----Direitos autorais--->
+ <footer>     
+    <div class="text-center copyright">
+	  &copy; Criado e Desenvolvido por GS.WebDesigner.<br>CEO: <a href="https://www.facebook.com/gregory.sampaio.54" target="_blank">Gregory Sampaio Costa.</a> Todos os direitos reservados.
+    </div>
+ </footer>       
+    
+    <!--Javascripts-->  
+    <!-- JavaScript menu -->
+    <script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+    <script type="text/javascript" src="js/script_menu.js"></script>
+    <!-- JS slider--> 
+    <script src="js/jquery.fancybox.pack.js"></script>  
+    <script type="text/javascript" src="js/jquery.devrama.slider-0.9.4.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider-banner').DrSlider({
+				'transition': 'random',
+				showNavigation: true,
+				progressColor: "#000000"
+			});
+		});
+    </script>
+    <!-- Função do script para scroll dos li do menu, background passando de li para li através das sessões -->
+    <script src="js/scroll_menu.js"></script>
+    <!--Função do Script para menu retratil -->        
+    <script src="js/texto_sobre_professor.js"></script>
+   
+ </body>
+</html>
